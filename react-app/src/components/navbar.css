@@ -1,0 +1,25 @@
+/* https://www.canva.com/colors/color-palettes/rosy-flamingo/ */
+
+.navbar {
+    background-color: #E8B4B8;
+    
+}
+
+.navbar h1 {
+    font-family: sans-serif;
+}
+
+/* showCart page */
+.cart-btn {
+    background-color: #A49393;
+}
+
+/* product edit page */
+.nav-btn {
+    background-color: #A49393;
+    border-color: #67595E;
+}
+
+.nav-link {
+    color: white;
+}
