@@ -12,13 +12,30 @@ import products from './products';
 
 
 class App extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     sortType: "norm",
+  //     listNum: "",
+  //     products: products
+  //   };
+  // }
   constructor(props) {
     super(props);
     this.state = {
+      products: [],
       sortType: "norm",
       listNum: "",
-      products: products
+      isLoading: true,
     };
+  }
+
+  componentDidMount() {
+    this.setState({ isLoading: true });
+
+    fetch("api/books")
+      .then((response) => response.json())
+      .then((data) => this.setState({ products: data, isLoading: false }));
   }
 
   handleQuantityChange = (quantity, id, operator = 0) => {
@@ -36,9 +53,9 @@ class App extends Component {
       switch(sortType) {
         case "norm": return a.id - b.id
           break;
-        case "asc": return a.price - b.price
+        case "asc": return a.author - b.author
           break;
-        case "desc": return b.price - a.price
+        case "desc": return b.author - a.author
       }
     });
     this.setState({ sortType });

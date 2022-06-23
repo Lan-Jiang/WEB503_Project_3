@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart,faRegistered, faAtom, faArrowUpRightDots } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart,faRegistered, faAtom, faArrowUpRightDots, faArrowsTurnToDots } from "@fortawesome/free-solid-svg-icons";
 import {
     BrowserRouter as Router,
     Switch,
@@ -24,7 +24,7 @@ function NavBar(props) {
             <div className="navbar p-5">
                 <h1>
                     <Link to="/" className="text-decoration-none text-white">
-                    <FontAwesomeIcon icon={faArrowUpRightDots} className="fas fa-lg text-white"/>
+                    <FontAwesomeIcon icon={faArrowsTurnToDots} className="fas fa-lg text-white"/>
                     <span className="px-2">Trade Xi</span> 
                     </Link>
                 </h1>
@@ -70,7 +70,7 @@ function NavBar(props) {
                 <Route path="/books" exact={true} >
                      <BookList />
                 </Route>
-                <Route path="/books/:id" >
+                <Route path="/books/:id" exact={true}>
                    <BookEdit />
                 </Route>
             </Switch>

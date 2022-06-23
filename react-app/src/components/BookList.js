@@ -49,11 +49,12 @@ class BookList extends Component {
         <tr key={book._id}>
           <td style={{ whiteSpace: "nowrap" }}>{book.title}</td>
           <td>{book.author}</td>
+          <td>{book.status}</td>
           <td>
             <ButtonGroup>
               <Button
                 size="sm"
-                color="primary"
+                color="secondary"
                 tag={Link}
                 to={"/books/" + book._id}
               >
@@ -92,6 +93,7 @@ class BookList extends Component {
               <tr>
                 <th width="20%">Product Name</th>
                 <th width="15%">Price</th>
+                <th width="15%">Status</th>
                 <th width="15%">Actions</th>
               </tr>
             </thead>

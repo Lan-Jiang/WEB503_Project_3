@@ -85,9 +85,10 @@ const Welcome = ({ fbpic, fbdata }) => {
       <h3 className="d-inline text-success mx-2">
         Welcome back {fbdata.name}!
       </h3>
-      <p className="my-5">Time to upload?</p>
+      <br></br>
+      {/* <p className="my-5">Time to upload?</p> */}
       <Link to="/books">
-        Product List
+        Check Your Product List & Start A Trade!
       </Link>
     </React.Fragment>
   );

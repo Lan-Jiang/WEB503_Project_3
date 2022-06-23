@@ -82,7 +82,7 @@ function ShowCart(props) {
               <div className='border px-4 py-2'>  
                 <div className='d-flex'>     
                   <div className='d-inline  col-sm-4'>
-                      <img src={item.image} alt={item.desc} width="150" />
+                      <img src='/product_pic.png' alt={item.desc} width="150" />
                       <h4 className='justify-content-center'>{item.desc}</h4>
                   </div>
                   <div className='d-inline d-flex col-sm-6 text-left align-items-center'>

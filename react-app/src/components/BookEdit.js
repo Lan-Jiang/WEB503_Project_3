@@ -9,6 +9,8 @@ class BookEdit extends Component {
   emptyBook = {
     title: "",
     author: "",
+    status: "",
+    value: 0
   };
 
   constructor(props) {
@@ -79,12 +81,25 @@ class BookEdit extends Component {
                 Price
               </Label>
               <Input
-                type="text"
+                type="number"
                 name="author"
                 id="author"
                 value={item.author || ""}
                 onChange={this.handleChange}
                 autoComplete="author"
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="status" className="h5 mt-3">
+                Product Status
+              </Label>
+              <Input
+                type="text"
+                name="status"
+                id="status"
+                value={item.status || ""}
+                onChange={this.handleChange}
+                autoComplete="status"
               />
             </FormGroup>
             <FormGroup>
