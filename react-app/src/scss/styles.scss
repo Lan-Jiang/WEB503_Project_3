@@ -1,0 +1,42 @@
+@import "colors.scss";
+@import "variables.scss";
+
+html {
+  // Operations
+  font-size: 0.8em + 0.2;           //1 
+  width: 100%     //75;
+}
+
+body{
+  font-family: $fontFamily1;
+  background: $backgroundColor2;
+}
+
+/* Nevigation */
+.container {
+    margin-top: 3em;
+}
+
+.navbar {
+    background-color: $color5;
+
+    .h1 {
+        font-family: $fontFamily1;
+    }
+    
+}
+
+/* showCart page */
+.cart-btn {
+    background-color: $color6;
+}
+
+/* product edit page */
+.nav-btn {
+    background-color: $color6;
+    border-color: $color7;
+}
+
+.nav-link {
+    color: $backgroundColor1;
+}

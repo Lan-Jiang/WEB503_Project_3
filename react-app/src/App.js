@@ -1,25 +1,10 @@
 import React, { Component } from "react";
-import Home from "./components/Home";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import BookList from "./components/BookList";
-// import BookEdit from "./components/BookEdit";
-import "./App.css";
-
 import NavBar from './components/navbar';
-//import DisplayProduct from './components/displayproducts';
-import products from './products';
-//import { useState } from 'react';
+import "./css/styles.css";
+import "./App.css";
 
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     sortType: "norm",
-  //     listNum: "",
-  //     products: products
-  //   };
-  // }
   constructor(props) {
     super(props);
     this.state = {
@@ -38,11 +23,11 @@ class App extends Component {
       .then((data) => this.setState({ products: data, isLoading: false }));
   }
 
-  handleQuantityChange = (quantity, id, operator = 0) => {
+  handleQuantityChange = (quantity, _id, operator = 0) => {
     let products = this.state.products 
 
     if (products[0].value >= 0 && products[0].value < 10) {
-      products.filter(item => item.id === id)[0].value = parseInt(quantity) + parseInt(operator)
+      products.filter(item => item._id === _id)[0].value = parseInt(quantity) + parseInt(operator)
       this.setState({ products })
       console.log()
     }

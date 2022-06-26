@@ -7,6 +7,8 @@ exports.createBook= (req, res) => {
     id: req.body.id,
     title: req.body.title,
     author: req.body.author,
+    value: req.body.value,
+    status: req.body.status
   });
   // Save a Inventory in the MongoDB
   book
@@ -87,6 +89,8 @@ exports.updateBook = (req, res) => {
       id: req.body.id,
       title: req.body.title,
       author: req.body.author,
+      value: req.body.value,
+      status: req.body.status
     },
     { new: false }
   )

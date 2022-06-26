@@ -9,8 +9,8 @@ class BookEdit extends Component {
   emptyBook = {
     title: "",
     author: "",
-    status: "",
-    value: 0
+    value: 0,
+    status: ""
   };
 
   constructor(props) {

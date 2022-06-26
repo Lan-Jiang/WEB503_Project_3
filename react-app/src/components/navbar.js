@@ -15,8 +15,7 @@ import LogIn from "./login";
 import Home from "./Home";
 import BookList from "./BookList";
 import BookEdit from "./BookEdit";
-import "./navbar.css";
-
+// import "./css/styles.css";
 
 function NavBar(props) {
     return (

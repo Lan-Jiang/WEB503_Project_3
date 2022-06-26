@@ -26,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-css": "node-sass --include-path scss src/scss/styles.scss -o src/css/"
   },
   "proxy": "http://localhost:8080",
   "eslintConfig": {
