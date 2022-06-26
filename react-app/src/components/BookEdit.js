@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import Navbar from "./navbar";
-import { Link, withRouter, useHistory } from "react-router-dom";
+import { Link, withRouter} from "react-router-dom";
 import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "./App.css";
 
 class BookEdit extends Component {
   emptyBook = {

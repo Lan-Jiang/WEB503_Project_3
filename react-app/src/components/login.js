@@ -95,13 +95,3 @@ const Welcome = ({ fbpic, fbdata }) => {
 };
 
 export default LogIn;
-
-
-// export default function LogIn(props) {
-//   console.log(props.products);
-//   return (
-//       <div className="container mx-auto bg-white">
-//           <p>Log In</p>
-//       </div>
-//   )
-// }

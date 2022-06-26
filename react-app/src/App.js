@@ -65,19 +65,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <Router>
-//         <Switch>
-//           <Route path="/" exact={true} component={Home} />
-//           <Route path="/books" exact={true} component={BookList} />
-//           <Route path="/books/:id" component={BookEdit} />
-//         </Switch>
-//       </Router>
-//     );
-//   }
-// } 
-// export default App;

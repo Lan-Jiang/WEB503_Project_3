@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusSquare, faMinusSquare } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "reactstrap";
-import LogIn from './login';
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
   Link
 } from "react-router-dom";
-// import "./navbar.css";
 
 function ShowCart(props) {
   return props.totalQuantity > 0 ? ( 

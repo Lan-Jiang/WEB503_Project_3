@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import { useState } from "react";
-import { Button } from "reactstrap";
-import {
-  Link
-} from "react-router-dom";
 import { Modal, showImage } from "react-bootstrap";
 import { faPlusCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

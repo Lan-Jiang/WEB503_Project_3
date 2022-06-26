@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart,faRegistered, faAtom, faArrowUpRightDots, faArrowsTurnToDots } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart,faRegistered, faArrowsTurnToDots } from "@fortawesome/free-solid-svg-icons";
 import {
     BrowserRouter as Router,
     Switch,
-    Routes,
     Route,
     Link
   } from "react-router-dom";
@@ -78,20 +77,3 @@ function NavBar(props) {
 }
  
 export default NavBar;
-
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <Router>
-//         <Switch>
-//           <Route path="/" exact={true} component={Home} />
-//           <Route path="/books" exact={true} component={BookList} />
-//           <Route path="/books/:id" component={BookEdit} />
-//         </Switch>
-//       </Router>
-//     );
-//   }
-// } 
-// export default App;
-
