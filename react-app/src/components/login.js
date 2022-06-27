@@ -87,7 +87,7 @@ const Welcome = ({ fbpic, fbdata }) => {
       </h3>
       <br></br>
       {/* <p className="my-5">Time to upload?</p> */}
-      <Link to="/books">
+      <Link to="/productedit">
         Check Your Product List & Start A Trade!
       </Link>
     </React.Fragment>

@@ -24,7 +24,7 @@ function DisplayProducts(props) {
     <div>
     <div className="container col-lg-6 my-5 mx-auto">
       <p>
-        Trade Xi is a website for trading second-used wedding items, including wedding dress, wedding shoes, veils and more.
+        Trade Xi is a website for trading second-hand wedding items, including wedding dress, wedding shoes, veils and more.
         Sell your items by clicking</p><a href="/login">login</a>
         {/* <Link to="/login">login</Link> */}
     </div>
@@ -83,8 +83,8 @@ function DisplayProducts(props) {
             className="mx-5"
           />
           <p>
-            <span className="text-dark">Ratings: </span>
-            4/5
+            <span className="text-dark">Status: </span>
+            {showImg.status}
             {/* {showImg.rating}/5 */}
           </p>
         </Modal.Body>
